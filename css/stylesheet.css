@@ -1,0 +1,149 @@
+.jumbo-header {
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    /*font-family: 'Junction', serif;*/
+    font-family: 'Droid Serif', Georgia, Times, serif;
+    font-size: 62px;
+    line-height: 65px;
+    margin-top: 20px; 
+}
+
+.general-h {
+    color: #3B5998;
+    text-align: center;
+    font-size: 62px;
+    /*font-family: 'Junction', serif;*/
+    font-family: 'Droid Serif', Georgia, Times, serif;
+    font-size: 62px;
+    line-height: 65px;
+}
+
+/*.div-profile {
+    background-color: #f1eded;
+}*/
+
+.header-rule {
+    width: 410px;
+    color: #ffffff;
+    border: 1px #ffffff solid;
+}
+
+.body-rule {
+    width: 600px;
+    color: #000000;
+    border: 1px #ffffff solid;
+}
+
+#contact-border {
+    border: 2px #ffffff solid;
+    padding: 10px;
+}
+
+#contact-border:hover {
+    color: #ffffff;
+}
+
+.image-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    align-content: center;
+}
+
+.p-class {
+    color:#ffffff;
+    text-align: center;
+    /*font-family: 'Junction', serif;*/
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.body-class {
+    color:#000000;
+    text-align: center;
+    /*font-family: 'Junction', serif;*/
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-bar a:link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+/*a:visited {
+    color: #ff1616;
+}*/
+
+.top-nav-bar a:hover {
+    /*background-color: #e43636;*/
+    text-decoration: none;
+    color: #f77676;
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+.top-nav-bar a:active {
+    color: #ff2222;
+    text-decoration: none;
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li a {
+    color: #ffffff;
+}
+
+ /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+.fa-skype {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #55ACEE;
+    color: white;
+} 
