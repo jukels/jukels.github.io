@@ -84,9 +84,11 @@
 }
 
 .span-border {
+    font-family: 'Russo One', sans-serif;
     border: #ffffff 2px solid;
-    padding: 10px;
+    padding: 5px;
     font-size: 60px;
+    font-weight: bold;
 }
 
 .span-border a:hover {
