@@ -16,7 +16,7 @@
     font-size: 50px;
     /*font-family: 'Junction', serif;*/
     font-family: 'Droid Serif', Georgia, Times, serif;
-    font-size: 62px;
+    /*font-size: 62px;*/
     line-height: 65px;
 }
 
@@ -52,8 +52,45 @@
     align-content: center;
 }
 
+
+.logo {
+     width: 120px;
+     height: 100px;
+}
+
+.logo-one {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.logo-two {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    color: #ff2222;
+    font-size: 60px;
+}
+
+.span-border {
+    border: #ffffff 2px solid;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.span-border a:hover {
+    /*background-color: #e43636;*/
+    text-decoration: none;
+    color: #ffffff;
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+.span-border a:active {
+    color: #ffffff;
+    text-decoration: none;
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
 .p-class {
-    color: #19429b;
+    color: #ff2222;
     text-align: center;
     /*font-family: 'Junction', serif;*/
 	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
@@ -85,6 +122,16 @@ ul {
 
 /*a:visited {
     color: #ff1616;
+}
+
+.span-firstName {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.span-lastName {
+    color: #ff2222;
+    font-size: 20px;
 }*/
 
 .top-nav-bar a:hover {
