@@ -45,6 +45,18 @@
     color: #ffffff;
 }
 
+.explore-button {
+    font-weight: bold;
+    color: #ffffff;
+    border: 3px #ffffff solid;
+    padding: 15px;
+}
+
+.explore-button:hover {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
 .image-circle {
     border-radius: 50%;
     width: 200px;
@@ -90,12 +102,37 @@
 }
 
 .p-class {
-    color: #ff2222;
+    color: #ffffff;
     text-align: center;
     /*font-family: 'Junction', serif;*/
 	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 25px;
+}
+
+.typing {
+    white-space: nowrap;
+    animation: type 4s steps(60, end);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.name-span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+}
+
+@keyframes blink{
+  to{opacity: .0;}
 }
 
 .body-class {
@@ -193,4 +230,6 @@ li a {
 .fa-linkedin {
     background: #55ACEE;
     color: white;
-} 
+}
+
+* { color:#fff; text-decoration: none;}
