@@ -55,6 +55,7 @@
 .explore-button:hover {
     color: #ffffff;
     text-decoration: none !important;
+    background-color: #3B5998;
 }
 
 .image-circle {
