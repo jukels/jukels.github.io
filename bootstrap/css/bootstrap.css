@@ -4816,9 +4816,9 @@ tbody.collapse.show {
   margin-bottom: 2rem;
   background-color: #000000;
   /*background-image: url('https://static.pexels.com/photos/795722/pexels-photo-795722.jpeg');*/
-  background-image: url('https://static.pexels.com/photos/796601/pexels-photo-796601.jpeg');
+  /*background-image: url('https://static.pexels.com/photos/796601/pexels-photo-796601.jpeg');*/
   border-radius: 0.3rem;
-  min-height: 660px;
+  min-height: 700px;
   background-size: cover;
 }
 
