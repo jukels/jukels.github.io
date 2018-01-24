@@ -348,6 +348,16 @@ footer p {
     }
 }
 
+@media (max-width: 600px) {
+    .trigram {
+        display: block;
+    }
+
+    .top-nav-bar {
+        display: none;
+    }
+}
+
 @media (max-width: 320px) {
     .trigram {
         display: block;
@@ -355,6 +365,10 @@ footer p {
 
     .top-nav-bar {
         display: none;
+    }
+
+    .explore-button {
+        font-size: 20px;
     }
 }
 
