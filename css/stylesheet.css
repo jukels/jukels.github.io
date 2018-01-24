@@ -348,7 +348,7 @@ footer p {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 533px) {
     .trigram {
         display: block;
     }
