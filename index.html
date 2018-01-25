@@ -21,6 +21,11 @@
         });
     </script>
 
+    <script type="text/javascript">
+     $(function() { $('.scroll-down').click (function() { $('html, body').animate({scrollTop: $('section.ok').offset().top },
+    'slow'); return false; }); });
+    </script>
+
 </head>
 
 <body>
@@ -61,6 +66,10 @@
             <hr class="header-rule">
             <p class="p-class" style="letter-spacing: 2px; font-size: 20px">Interactive Resume</p><br />
             <center><a href="#contact" class="explore-button">HIRE ME!</a></center>
+
+            <div>
+                <a class="scroll-down" href="#profile" address="true">
+            </div>
         </div>
 
 
@@ -74,6 +83,7 @@
             <a href="#contact">Contact</a>
         </div>
 
+    <section class="ok">
     <div class="container-fluid">
         <div class="row">
             <div class="col">
@@ -100,6 +110,7 @@
         </div>
         <br />
     </div>
+    </section>
 
     <div class="container-fluid">
         <div class="row">
@@ -146,14 +157,12 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container-fluid background-footer">
-            <p>Posted by: McDaniels Okoro</p>
-            <p>Contact information:
-                <a href="mailto:mcdaniels.okoro@gmail.com">
-                    mcdaniels.okoro@gmail.com</a>.</p>
+    <div class="container-fluid background-footer">
+        <p>Posted by: McDaniels Okoro</p>
+        <p>Contact information:
+            <a href="mailto:mcdaniels.okoro@gmail.com">
+                mcdaniels.okoro@gmail.com</a>.</p>
         </div>
-    </div>
 
     <script>
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */

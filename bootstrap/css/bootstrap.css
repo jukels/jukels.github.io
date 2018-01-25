@@ -4818,8 +4818,15 @@ tbody.collapse.show {
   /*background-image: url('https://static.pexels.com/photos/795722/pexels-photo-795722.jpeg');*/
   /*background-image: url('https://static.pexels.com/photos/796601/pexels-photo-796601.jpeg');*/
   border-radius: 0.3rem;
-  min-height: 700px;
+  min-height: 100vh;
   background-size: cover;
+  /*Add a blur to backgroun image
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  z-index: -1; */ 
 }
 
 @media (min-width: 576px) {
