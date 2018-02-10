@@ -9,6 +9,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css”
+        media=”screen”>
     <script src="./js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -25,6 +27,60 @@
      $(function() { $('.scroll-down').click (function() { $('html, body').animate({scrollTop: $('section.ok').offset().top },
     'slow'); return false; }); });
     </script>
+<!--
+    <script>
+
+        jQuery(document).ready(function () {
+
+            var offset = 250;
+
+            var duration = 300;
+
+            jQuery(window).scroll(function () {
+
+                if (jQuery(this).scrollTop() > offset) {
+
+                    jQuery('.back - to - top').fadeIn(duration);
+
+                } else {
+
+                    jQuery('.back - to - top').fadeOut(duration);
+
+                }
+
+            });
+
+
+
+            jQuery('.back - to - top').click(function (event) {
+
+                event.preventDefault();
+
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+
+                return false;
+
+            })
+
+        });
+
+    </script>-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>    
 
 </head>
 
@@ -32,7 +88,7 @@
     <div id="main">
         <a name="home"></a>
         <div class="jumbotron">
-            <span onclick="openNav()" style="color: #fff; font-size: 36px; cursor: pointer;" class="trigram">&#9776;</span>
+            <span onclick="openNav()" style="color: #fff; font-size: 36px; cursor: pointer;" class="trigram float-right">&#9776;</span>
             <!--<a href="#"><img src="./images/logo.png" class="logo"></a>-->
             <!--<a href="#"><span class="span-border">M<span style="color:#ff2222">O</span></span></a> -->
             <ul class="top-nav-bar float-right">
@@ -71,7 +127,14 @@
                 <a class="scroll-down" href="#profile" address="true">
             </div>
         </div>
-
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top
+            <span></span>
+        </a>
+        <!--<a href="#" class="back-to-top" style="display: inline;">
+        
+            <i class="fa fa-arrow-circle-up"></i>
+        
+        </a>-->
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -97,12 +160,6 @@
                     <img class="image-circle" src="./images/mcdaniels.jpeg" alt="Personal Photo">
                 </center>
                 <br />
-                <center>
-                    <a href="http://www.facebook.com/mcdaniels.okoro" class="fa fa-facebook" title="Add me on Facebook"></a>
-                    <a href="http://www.twitter.com/acodeaholic" class="fa fa-twitter" title="Follow @acodeaholic on Twitter"></a>
-                    <a href="#" class="fa fa-skype" title="Video chat me on mcdaniels.okoro"></a>
-                    <a href="#" class="fa fa-linkedin" title="Add me to your connections"></a>
-                </center>
             </div>
             <div class="col">
 
@@ -158,11 +215,17 @@
     </div>
 
     <div class="container-fluid background-footer">
-        <p>Posted by: McDaniels Okoro</p>
+        <p class="footer-paragraph">Posted by: McDaniels Okoro</p>
         <p>Contact information:
             <a href="mailto:mcdaniels.okoro@gmail.com">
                 mcdaniels.okoro@gmail.com</a>.</p>
-        </div>
+        <center>
+            <a href="http://www.facebook.com/mcdaniels.okoro" class="fa fa-facebook" title="Add me on Facebook"></a>
+            <a href="http://www.twitter.com/acodeaholic" class="fa fa-twitter" title="Follow @acodeaholic on Twitter"></a>
+            <a href="#" class="fa fa-skype" title="Video chat me on mcdaniels.okoro"></a>
+            <a href="#" class="fa fa-linkedin" title="Add me to your connections"></a>
+        </center>
+    </div>
 
     <script>
         /*Adds a sidenav with overlay effect*/
