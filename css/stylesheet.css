@@ -71,7 +71,6 @@
     width: 200px;
     height: 200px;
     align-content: center;
-    float: left;
 }
 
 
@@ -259,11 +258,6 @@ li a {
     color: white;
 }
 
-.fa-github {
-    background: #000;
-    color: #fff;
-}
-
 * { color:#fff; text-decoration: none;}
 
 footer p {
@@ -291,7 +285,7 @@ footer p {
     background: #26262a;
     /*background-image: url('https://images.pexels.com/photos/442600/pexels-photo-442600.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
     background-size: 100% 100%;*/
-    min-height: 200px;
+    min-height: 300px;
     min-width: 100%;
 }
 
@@ -522,28 +516,4 @@ section {
     opacity:1;
     filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
-}
-
-.hire {
-    color: #000;
-    border-bottom: 1px dotted #ff2222;
-}
-
-.hire:hover {
-    color: #fff;
-    border-bottom: none;
-    background: #000;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.key-word {
-    text-transform: uppercase;
-    color: #ff2222;
-    font-weight: bold;
-    border-bottom: 1px dotted #ff2222;
-}
-
-.copyright {
-    font-size: 14px;
 }
