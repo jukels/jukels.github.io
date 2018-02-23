@@ -59,10 +59,11 @@
 
 .explore-button:hover {
     text-decoration: none !important;
-    background-color: #5A6070;
+    /*background-color: #5A6070;*/
+    background: #fff;
     opacity: 0.5;
-    filter: alpha(opacity=50);
-    color: #ffffff;
+    filter: alpha(opacity=0);
+    color: #000;
     font-weight: bold;
 }
 
@@ -94,10 +95,15 @@
 
 .span-border {
     font-family: 'Russo One', sans-serif;
-    border: #ffffff 2px solid;
+    /*border: #ffffff 2px solid;*/
     padding: 5px;
-    font-size: 60px;
     font-weight: bold;
+    position: fixed;
+}
+
+.span-border:hover {
+    color: #ffffffa1;
+    transition:all 0.5s ease-in-out;
 }
 
 .span-border a:hover {
@@ -160,13 +166,14 @@
     text-align: center;
     /*font-family: 'Junction', serif;*/
     /*font-family: 'Droid Sans', Helvetica, Arial, sans-serif;*/
-    font-family: 'Open Sans', serif;
-    font-size: 16px;
+    /*font-family: 'Open Sans', serif;*/
+    font-family: 'Indie Flower', serif;
+    font-size: 20px;
     line-height: 25px;
     letter-spacing: 2px;
 }
 
-ul {
+.ul-style {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -210,14 +217,43 @@ ul {
 	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
-li {
+
+.li-style {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 14px;
 }
 
-li a {
+.li-style a {
     color: #ffffff;
+}
+
+.li-style a:hover {
+    color: #ffffffa1;
+    transition:all 0.5s ease-in-out;
+}
+
+li {
+    color: #000;
+    list-style-type: square;
+    /*font-family: 'Open Sans', serif;*/
+    font-family: 'Indie Flower', serif;
+    letter-spacing: 2px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.fun-text {
+    color: #000;
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.contact-p {
+    color: #000;
+    font-family: 'Indie Flower', serif;
+    font-size: 20px;
 }
 
  /* Style all font awesome icons */
@@ -228,22 +264,25 @@ li a {
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
-}
+}/*
 
 /* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
-}
+    color: #3b5998;
+    
+    transition:all 0.5s ease-in-out;
+}/*
 
 /* Set a specific color for each brand */
 
-/* Facebook */
+/* Facebook *//*
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
 
-/* Twitter */
+/* Twitter *//*
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -262,12 +301,16 @@ li a {
 .fa-github {
     background: #000;
     color: #fff;
-}
+}*/
 
 * { color:#fff; text-decoration: none;}
 
 footer p {
     color: #000000;
+}
+
+.footer-contents {
+    padding-top: 50px;
 }
 
 /*
@@ -546,4 +589,153 @@ section {
 
 .copyright {
     font-size: 14px;
+}
+
+.fun-image {
+    width: 400px;
+    height: 600px;
+    image-orientation: from-image;
+    float: left;
+    margin-right: 50px;
+    margin-left:50px;
+}
+
+.blogger {
+    color:#000; 
+    border-bottom: 1px dashed #ff2222;
+}
+
+.blogger:hover {
+    background: #ff2222;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.about-me {
+    font-family: 'Droid Serif', Georgia, Times, serif;
+    padding-left: 10px;
+}
+
+
+
+/*Contact form styling*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+/*
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}*/
+
+/*
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:#0CF;
+}*/
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#ff2222;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+    font-size:15px;
+    font-weight: bold;
+}
+
+#contact button[type="submit"]:hover {
+	background:#ff2222b0;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
 }
