@@ -97,11 +97,18 @@
 
 .explore-button:hover {
     text-decoration: none !important;
+<<<<<<< HEAD
     /*background-color: #5A6070;*/
     background: #ffffff;
     /*opacity: 0.5;*/
     filter: alpha(opacity=0);
     color: #000000;
+=======
+    background-color: #5A6070;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    color: #ffffff;
+>>>>>>> master
     font-weight: bold;
     border: 3px solid #ffffff;
     transition:all 0.5s ease-in-out;
@@ -112,8 +119,11 @@
     width: 200px;
     height: 200px;
     align-content: center;
+<<<<<<< HEAD
     float: left;
     margin-left:50px;
+=======
+>>>>>>> master
 }
 
 
@@ -136,16 +146,15 @@
 
 .span-border {
     font-family: 'Russo One', sans-serif;
+<<<<<<< HEAD
     /*font-family: 'Monda', sans-serif;*/
     /*border: #ffffff 2px solid;*/
+=======
+    border: #ffffff 2px solid;
+>>>>>>> master
     padding: 5px;
+    font-size: 60px;
     font-weight: bold;
-    position: fixed;
-}
-
-.span-border:hover {
-    color: #ffffffa1;
-    transition:all 0.5s ease-in-out;
 }
 
 .span-border a:hover {
@@ -212,15 +221,21 @@
     text-align: center;
     /*font-family: 'Junction', serif;*/
     /*font-family: 'Droid Sans', Helvetica, Arial, sans-serif;*/
+<<<<<<< HEAD
     /*font-family: 'Open Sans', serif;*/
     /*font-family: 'Indie Flower', serif;*/
     font-family: 'Monda', sans-serif;
     font-size: 16px;
     line-height: 35px;
+=======
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+    line-height: 25px;
+>>>>>>> master
     letter-spacing: 2px;
 }
 
-.ul-style {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -267,19 +282,22 @@
     font-family: 'Monda', sans-serif;
 }
 
-
-.li-style {
+li {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
+<<<<<<< HEAD
     font-size: 14px;
     font-weight: bold;
+=======
+>>>>>>> master
 }
 
-.li-style a {
+li a {
     color: #ffffff;
 }
 
+<<<<<<< HEAD
 .li-style a:hover {
     color: #ffffffa1;
     transition:all 0.5s ease-in-out;
@@ -310,6 +328,8 @@ li {
     font-size: 20px;
 }
 
+=======
+>>>>>>> master
  /* Style all font awesome icons */
 .fa {
     padding: 10px;
@@ -318,25 +338,29 @@ li {
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
-}/*
+}
 
 /* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
+<<<<<<< HEAD
     color: #ff2222a2;
     
     transition:all 0.5s ease-in-out;
 }/*
+=======
+}
+>>>>>>> master
 
 /* Set a specific color for each brand */
 
-/* Facebook *//*
+/* Facebook */
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
 
-/* Twitter *//*
+/* Twitter */
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -352,19 +376,10 @@ li {
     color: white;
 }
 
-.fa-github {
-    background: #000;
-    color: #fff;
-}*/
-
 * { color:#fff; text-decoration: none;}
 
 footer p {
     color: #000000;
-}
-
-.footer-contents {
-    padding-top: 50px;
 }
 
 /*
@@ -388,7 +403,7 @@ footer p {
     background: #26262a;
     /*background-image: url('https://images.pexels.com/photos/442600/pexels-photo-442600.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
     background-size: 100% 100%;*/
-    min-height: 200px;
+    min-height: 300px;
     min-width: 100%;
 }
 
@@ -619,6 +634,7 @@ section {
     opacity:1;
     filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
+<<<<<<< HEAD
 }
 
 .hire {
@@ -711,3 +727,6 @@ body {
 	color:#777;
 	background:#0CF;
 }*/
+=======
+}
+>>>>>>> master
