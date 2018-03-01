@@ -9,78 +9,53 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!--<link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css”
+        media=”screen”>-->
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+=======
     <link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css”
         media=”screen”>
+>>>>>>> master
     <script src="./js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 
     <!-- Displays a random image on the jumbotron upon every reload of the page -->
     <script type="text/javascript">
         $(document).ready(function () {
+<<<<<<< HEAD
+            var images = ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpg', '05.jpg', '06.jpeg', '07.jpeg', '08.jpeg', '09.jpeg', '10.jpeg', '11.jpeg', '12.jpeg', '13.jpeg', '14.jpeg'];
+=======
             var images = ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpg', '05.jpeg', '06.jpeg', '07.jpeg', '08.jpeg', '09.jpeg', '10.jpeg'];
+>>>>>>> master
 
             $('.jumbotron').css({ 'background-image': 'url(images/jumbotron/' + images[Math.floor(Math.random() * images.length)] + ')' });
         });
     </script>
 
     <script type="text/javascript">
-     $(function() { $('.scroll-down').click (function() { $('html, body').animate({scrollTop: $('section.ok').offset().top },
+     $(function() { $('.scroll-down').click (function() { $('html, body').animate({scrollTop: $('div.ok').offset().top },
     'slow'); return false; }); });
     </script>
-<!--
-    <script>
 
-        jQuery(document).ready(function () {
-
-            var offset = 250;
-
-            var duration = 300;
-
-            jQuery(window).scroll(function () {
-
-                if (jQuery(this).scrollTop() > offset) {
-
-                    jQuery('.back - to - top').fadeIn(duration);
-
-                } else {
-
-                    jQuery('.back - to - top').fadeOut(duration);
-
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 100){
+                    $('#scroll').fadeIn();
+                }else{
+                    $('#scroll').fadeOut();
                 }
-
             });
-
-
-
-            jQuery('.back - to - top').click(function (event) {
-
-                event.preventDefault();
-
-                jQuery('html, body').animate({ scrollTop: 0 }, duration);
-
+            $('#scroll').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 600);
                 return false;
-
-            })
-
+            });
         });
-
-    </script>-->
-
-<script type="text/javascript">
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 100){
-            $('#scroll').fadeIn();
-        }else{
-            $('#scroll').fadeOut();
-        }
-    });
-    $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-});
-</script>    
+    </script>    
 
 </head>
 
@@ -104,8 +79,16 @@ $(document).ready(function(){
                 <li>
                     <a href="#resume">Resume</a>
                 </li>
+<<<<<<< HEAD
+                <li class="li-style">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="li-style">
+                    <a href="http://mcdanielsokoro.wordpress.com">Blog</a>
+=======
                 <li>
                     <a href="#">Blog</a>
+>>>>>>> master
                 </li>
                 <li>
                     <a id="contact-border" href="#contact">Contact</a>
@@ -114,7 +97,7 @@ $(document).ready(function(){
        
             <h1 class="jumbo-header">
                 <p class="typewrite" data-period="2000" data-type='[ "Hi, I&#39;m McDaniels!", "I&#39;m a Codeaholic.", 
-                "A Frontend Developer.", "Aspiring Fullstack Developer.", "Passionate about Tech.", "A keen Andelan.", "When I&#39;m not Developing", 
+                "A Frontend Dev.", "Aspiring Fullstack Dev.", "Passionate about Tech.", "A keen Andelan.", "When I&#39;m not Developing", 
                 "I think about Developing." ]'>
                 <span class="wrap"></span>
                 </p>
@@ -146,13 +129,19 @@ $(document).ready(function(){
             <a href="#contact">Contact</a>
         </div>
 
-    <section class="ok">
-    <div class="container-fluid">
+    <!--<section class="ok">-->
+    <div class="container-fluid ok" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">
         <div class="row">
             <div class="col">
-
+                <a name="profile">
+                    <h1 class="general-h">Profile</h1>
+                </a>
+                <hr class="profile-rule" />
             </div>
             <div class="col">
+<<<<<<< HEAD
+
+=======
                 <a name="profile"><h1 class="general-h">Profile</h1></a>
                 <p class="body-class" align="center">I'm a Frontend Web Developer.</p>
                 <br /><hr />
@@ -160,17 +149,84 @@ $(document).ready(function(){
                     <img class="image-circle" src="./images/mcdaniels.jpeg" alt="Personal Photo">
                 </center>
                 <br />
+>>>>>>> master
             </div>
             <div class="col">
 
             </div>
         </div>
-        <br />
-    </div>
-    </section>
-
-    <div class="container-fluid">
+<<<<<<< HEAD
         <div class="row">
+            <div class="col">
+                <p class="body-class" style="padding:100px">
+                    <img class="image-circle" src="./images/mcdaniels.jpeg" alt="Personal Photo">I've got some pretty amazing HTML, CSS and JavaScript skills that will make you marvel. Although I'm still a learner
+                    (we all are. I'm sure you are too?), I believe I'm not too far from
+                    <span class="key-word blogger" title="I'm definitely not bluffing">awesome</span>. Well, what do you know? I'm always focused, towards achieving individual goals and goals set by others.
+                    I hate to boast, but I'm pretty much more of a
+                    <span class="key-word blogger" title="I scare myself sometimes">committed</span> team player, who is
+                    <span class="key-word blogger" title="I was born that way">self-motivated</span> and can
+                    <span class="key-word blogger" title="No time for BS">prioritise</span> effectively. In case you're looking for a new hire, I'm currently looking to put my newly acquired
+                    superpowers to use, so don't fail to
+                    <a href="#contactme" title="Be real quick, cos I won't be on the market for too long ;)">
+                        <span class="key-word blogger">hire me</span>
+                    </a>.</p><hr class="hr-color" />
+            </div>
+        </div>
+=======
+        <br />
+>>>>>>> master
+    </div>
+
+    <div class="container-fluid" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">
+        <div class="row">
+<<<<<<< HEAD
+            <div class="col fun-text">
+                <a name="fun">
+                    <h1 class="general-h">Facts about Me</h1>
+                </a>
+                <hr class="facts-rule" />
+            </div>
+            <div class="col">
+
+            </div>
+
+            <div class="col">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="images/for-fun.jpg" class="fun-image" alt="My Personal Photo">
+                <!--<h2 class="about-me">Know me some more.</h2>-->
+                <ul>
+                    <li>I've got a <span class="blogger" title=" Benson Idahosa University, Benin">Bachelor's degree</span> (Information and Computer System).</li>
+                    <li>I once lived in <a href="https://www.google.com/maps/place/Slough,+UK/@51.5069993,-0.6451447,12z/data=!4m5!3m4!1s0x487663427e9e92a9:0xb16ca352b90b0206!8m2!3d51.5105384!4d-0.5950406?hl=en" title="Have a peek" class="blogger" target="_blank">Slough, United Kingdom</a>.</li>
+                    <li>I got my Master's degree (Software Engineering) at a <span class="blogger" title="University of Westminster">London University</span>.</li>
+                    <li>I now live in Port Harcourt.</li>
+                    <li>I love <span class="blogger" title="&#128525 &#128521 &#128515 &#128522 &#128527 &#128541 &#128540">emojis</span>.</li>
+                    <li>I'm an avid fan of <span class="blogger" title="Bleach and Naruto">Japanese animes</span> and the <span class="blogger" title="Kon-nichiwa">Japanese language</span>.</li>
+                    <li>I watch a lot of movies and wonder how I get the time to write codes.</li>
+                    <li>I have a home on <a href="http://twitter.com/acodeaholic" class="blogger" target="_blank" title="Follow me">Twitter</a>.</li>
+                    <li>I'm currently a <span class="blogger" title="Mehhhh &#128530">System Administrator</span>.</li>
+                    <li>I can't wait to transition to a <span class="blogger" title="Yaaay! &#128588">Software Engineering</span> role.</li>
+                    <li>The goal is to work from home (or wherever I want).</li>
+                    <li><a href="#contactme" style="color: #000; border-bottom:1px dashed #ff2222;">Oh, just connect with me already</a></li>
+                    <!--<li>Ideas come naturally to me.</li>
+                    <li>But I struggle to implement these ideas.</li>
+                    <li>I question myself "WHY" I do that all the time.</li>-->
+                    <li>Did I mention I'm a <a href="http://mcdanielsokoro.wordpress.com" class="blogger" target="_blank" title="Psst! Don't expect much">blogger</a> too?</li>
+                    <li>Oh, and computers listen to me when I speak.</li>
+                    <li>I not only code. I get involved in <span class="blogger" title="Badminton, Tennis, Running, Swimming">sports</span> too.
+                    <li>Marriage is at the bottom of my list (like, literally).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-color" /><br />
+
+    <div class="container-fluid foo-4">
+=======
             <div class="col">
 
             </div>
@@ -185,36 +241,88 @@ $(document).ready(function(){
     </div>
 
     <div class="container-fluid">
+>>>>>>> master
         <div class="row">
             <div class="col">
             
             </div>
             <div class="col">         
+<<<<<<< HEAD
+                <a name="portfolio"><h1 class="general-h">Portfolio</h1></a><hr class="portfolio-rule" />
+=======
                 <a name="resume"><h1 class="general-h">Resume</h1></a>
+>>>>>>> master
             </div>
             <div class="col">
             
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <p class="body-class">New developer here, nothing to see. Move along! But keep checking back for updates!</p>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
     </div>
+<<<<<<< HEAD
+    <hr class="hr-color" /><br />
+=======
+>>>>>>> master
 
     <div class="container-fluid">
         <div class="row">
             <div class="col">
+<<<<<<< HEAD
+                <a name="contactme">
+                    <h1 class="general-h">Get in Touch</h1><hr class="contact-rule" />
+=======
     
             </div>
             <div class="col">
                 <a name="contact">
                     <h1 class="general-h">Contact</h1>
+>>>>>>> master
                 </a>
             </div>
             <div class="col">
     
             </div>
         </div>
+
+        <div class="row">
+            <div class="col">
+                <p class="body-class">Like what you've seen? Let me join your awesome team</p>
+                <p class="body-class">Just shoot me a quick email. We can start off from there.</p>
+            </div>
+            <div class="col">
+                <form>
+                    <input type="text" placeholder="Your First Name" style="color: #000"> <br />
+                    <input type="text" placeholder="Your Last Name" style="color: #000"> <br />
+                    <input type="text" placeholder="Enter Your Subject" style="color: #000"> <br />
+                    <textarea placeholder="Enter your message..." style="color: #000"></textarea> <br />
+                    <button style="color: #000">Send</button>
+                </form>    
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid background-footer">
+<<<<<<< HEAD
+        <div class="footer-contents">
+            <center>
+                <a href="mailto:mcdaniels.okoro@gmail.com" class="fa fa-envelope"></a>
+                <a href="http://www.facebook.com/mcdaniels.okoro" class="fa fa-facebook"></a>
+                <a href="http://www.twitter.com/acodeaholic" class="fa fa-twitter"></a>
+                <!--<a href="#" class="fa fa-skype" title="Video chat me on mcdaniels.okoro"></a>-->
+                <a href="http://www.linkedin.com/in/mcdanielsokoro" class="fa fa-linkedin" target="_blank"></a>
+                <a href="http://www.github.com/jukels" class="fa fa-github" title="Follow me on github"></a><br /><br />
+
+                <p class="copyright">Copyright &copy; 2013 - 2018. All rights reserved. </p>
+            </center>
+        </div>
+=======
         <p class="footer-paragraph">Posted by: McDaniels Okoro</p>
         <p>Contact information:
             <a href="mailto:mcdaniels.okoro@gmail.com">
@@ -225,6 +333,7 @@ $(document).ready(function(){
             <a href="#" class="fa fa-skype" title="Video chat me on mcdaniels.okoro"></a>
             <a href="#" class="fa fa-linkedin" title="Add me to your connections"></a>
         </center>
+>>>>>>> master
     </div>
 
     <script>
@@ -252,5 +361,10 @@ $(document).ready(function(){
         }*/
     </script>
     </div>
+    <!--<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>-->
+    <!-- AniJS Core File -->
+    <script src="bower_components/anijs/dist/anijs-min.js"></script>
+    <!-- ScrollReveal Helper -->
+    <script src="bower_components/anijs/dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 </body>
 </html>
