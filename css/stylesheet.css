@@ -4,18 +4,20 @@
     font-size: 70px;
     font-weight: bold;
     /*font-family: 'Junction', serif;*/
-    font-family: 'Droid Serif', Georgia, Times, serif;
+    /*font-family: 'Droid Serif', Georgia, Times, serif;*/
+    font-family: 'Monda', sans-serif;
     font-size: 62px;
     margin-top: 20px;
     padding-top: 120px;
 }
 
 .general-h {
-    color: #3B5998;
+    color: #ff2222;
     text-align: center;
     font-size: 50px;
     /*font-family: 'Junction', serif;*/
-    font-family: 'Droid Serif', Georgia, Times, serif;
+    /*font-family: 'Droid Serif', Georgia, Times, serif;*/
+    font-family: 'Ubuntu', sans-serif;
     /*font-size: 62px;*/
     line-height: 65px;
 }
@@ -47,7 +49,8 @@
 }
 
 #contact-border:hover {
-    color: #ffffff;
+    color: #000000;
+    background: #ffffff;
 }
 
 .explore-button {
@@ -124,7 +127,8 @@
 }
 
 .span-border-footer {
-    font-family: 'Russo One', sans-serif;
+    /*font-family: 'Russo One', sans-serif;*/
+    font-family: 'Monda', sans-serif;
     border: #ffffff 2px solid;
     padding: 5px;
     font-size: 60px;
@@ -135,7 +139,8 @@
     color: #ffffff;
     text-align: center;
     /*font-family: 'Junction', serif;*/
-	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    /*font-family: 'Droid Sans', Helvetica, Arial, sans-serif;*/
+    font-family: 'Monda', sans-serif;
     font-size: 16px;
     line-height: 25px;
 }
@@ -187,7 +192,8 @@
 .top-nav-bar a:link {
     color: #ffffff;
     text-decoration: none;
-    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    /*font-family: 'Droid Sans', Helvetica, Arial, sans-serif;*/
+    font-family: 'Monda', sans-serif;
 }
 
 /*a:visited {
@@ -209,7 +215,8 @@
     text-decoration: none;
     border-bottom: 2px solid #f77676;
     /*color: #f77676;*/
-    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    /*font-family: 'Droid Sans', Helvetica, Arial, sans-serif;*/
+    font-family: 'Monda', sans-serif;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
@@ -219,7 +226,8 @@
 .top-nav-bar a:active {
     color: #ff2222;
     text-decoration: none;
-	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    /*font-family: 'Droid Sans', Helvetica, Arial, sans-serif;*/
+    font-family: 'Monda', sans-serif;
 }
 
 
