@@ -14,7 +14,7 @@
 .general-h {
     color: #ff2222;
     text-align: center;
-    font-size: 50px;
+    font-size: 4vw;
     /*font-family: 'Junction', serif;*/
     /*font-family: 'Droid Serif', Georgia, Times, serif;*/
     font-family: 'Ubuntu', sans-serif;
@@ -322,9 +322,11 @@ li {
 
 * { color:#fff; text-decoration: none;}
 
+/*
 footer p {
     color: #000000;
-}
+    font-family: 'Monda', sans-serif;
+}*/
 
 .footer-contents {
     padding-top: 50px;
@@ -420,6 +422,10 @@ footer p {
     .top-nav-bar {
         display: none;
     }
+    
+    .fun-image {
+        margin: 0px;
+    }    
 }
 
 @media (max-width: 533px) {
@@ -430,6 +436,10 @@ footer p {
     .top-nav-bar {
         display: none;
     }
+
+    .fun-image {
+        margin: 0px;
+    }    
 }
 
 @media (max-width: 320px) {
@@ -443,6 +453,14 @@ footer p {
 
     .explore-button {
         font-size: 20px;
+    }
+
+    .jumbotron, .p-class, .explore-button, .header-rule, .jumbo-header, .scroll-down {
+        width: 100%;
+    }
+
+    .fun-image {
+        margin: 0px;
     }
 }
 
@@ -524,7 +542,8 @@ section {
 
 .footer-paragraph {
     color: #fff;
-    font-size: 24px;
+    font-size: 16px;
+    font-family: 'Monda', sans-serif;
 }
 
 .footer-paragraph a:hover {
@@ -609,12 +628,12 @@ section {
 }
 
 .fun-image {
-    width: 500px;
-    height: 700px;
+    width: 40%;
+    height: auto;
     image-orientation: from-image;
     float: left;
     margin-right: 50px;
-    margin-left:100px;
+    margin-left:50px;
 }
 
 .blogger {
@@ -675,3 +694,15 @@ body {
 	background:#0CF;
 }*/
 
+.hr-color {
+    border-bottom: #ff2222a2;
+}
+
+.btn-color {
+    background: #ff2222a2;
+}
+
+.btn-color:hover {
+    background: #ff2222e8;
+    transition: all 0.5s ease-in-out;
+}

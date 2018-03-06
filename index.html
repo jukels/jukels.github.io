@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McDaniels Okoro - Aspiring Fullstack Web Developer</title>
     <link rel ="stylesheet" type="text/css" href="./css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"> -->
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
     <!--<link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css”
         media=”screen”>-->
     <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="./js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <!--<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- Displays a random image on the jumbotron upon every reload of the page -->
     <script type="text/javascript">
         $(document).ready(function () {
-            var images = ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpg', '05.jpg', '06.jpeg', '07.jpeg', '08.jpeg', '09.jpeg', '10.jpeg', '11.jpeg', '12.jpeg', '13.jpeg', '14.jpeg'];
+            var images = ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpg', '05.jpeg', '06.jpeg', '07.jpeg', '08.jpg', '09.jpeg', '10.jpeg', '11.jpeg', '12.jpeg', '13.jpeg', '14.jpg', '15.jpeg'];
 
             $('.jumbotron').css({ 'background-image': 'url(images/jumbotron/' + images[Math.floor(Math.random() * images.length)] + ')' });
         });
@@ -55,8 +60,8 @@
         <a name="home"></a>
         <div class="jumbotron">
             <span onclick="openNav()" style="color: #fff; font-size: 36px; cursor: pointer;" class="trigram float-right">&#9776;</span>
-            <!--<a href="#"><img src="./images/logo.png" class="logo"></a>-->
-            <a href="#" class="span-border" style="text-transform:uppercase; letter-spacing:5px;">McDaniels Okoro</a>
+            <!--<a href="#"><img src="./images/logo.png" class="logo"></a>
+            <a href="#" class="span-border" style="text-transform:uppercase; letter-spacing:5px;">McDaniels Okoro</a>-->
             <ul class="top-nav-bar float-right ul-style">
                 <li class="li-style">
                     <a href="#home">Home</a>
@@ -90,7 +95,7 @@
             </h1>
             <hr class="header-rule">
             <p class="p-class" style="letter-spacing: 2px; font-size: 20px">Interactive Resume</p><br />
-            <center><a href="#contact" class="explore-button">HIRE ME!</a></center>
+            <center><a href="#contactme" class="explore-button">HIRE ME!</a></center>
 
             <div>
                 <a class="scroll-down" href="#profile" address="true">
@@ -116,7 +121,7 @@
         </div>
 
     <!--<section class="ok">-->
-    <div class="container-fluid ok" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">
+    <div class="container-fluid ok wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
         <div class="row">
             <div class="col">
                 <a name="profile">
@@ -149,7 +154,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">
+    <div class="container-fluid wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
         <div class="row">
             <div class="col fun-text">
                 <a name="fun">
@@ -178,7 +183,7 @@
                     <li>I love <span class="blogger" title="&#128525 &#128521 &#128515 &#128522 &#128527 &#128541 &#128540">emojis</span>.</li>
                     <li>I'm an avid fan of <span class="blogger" title="Bleach and Naruto">Japanese animes</span> and the <span class="blogger" title="Kon-nichiwa">Japanese language</span>.</li>
                     <li>I watch a lot of movies and wonder how I get the time to write codes.</li>
-                    <li>I have a home on <a href="http://twitter.com/acodeaholic" class="blogger" target="_blank" title="Follow me">Twitter</a>.</li>
+                    <li>I have a home on <a href="http://twitter.com/acodeaholic" class="blogger" target="_blank" title="Come visit me">Twitter</a>.</li>
                     <li>I'm currently a <span class="blogger" title="Mehhhh &#128530">System Administrator</span>.</li>
                     <li>I can't wait to transition to a <span class="blogger" title="Yaaay! &#128588">Software Engineering</span> role.</li>
                     <li>The goal is to work from home (or wherever I want).</li>
@@ -196,54 +201,104 @@
     </div>
     <hr class="hr-color" /><br />
 
-    <div class="container-fluid foo-4">
+    <div class="container-fluid wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
         <div class="row">
-            <div class="col">
+            <div class="col-md-2">
             
             </div>
-            <div class="col">         
+            <div class="col-md-8">         
                 <a name="portfolio"><h1 class="general-h">Portfolio</h1></a><hr class="portfolio-rule" />
             </div>
-            <div class="col">
+            <div class="col-md-2">
             
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
                 <p class="body-class">New developer here, nothing to see. Move along! But keep checking back for updates!</p>
             </div>
-            <div class="col">
+            <div class="col-md-2">
 
             </div>
         </div>
     </div>
     <hr class="hr-color" /><br />
 
-    <div class="container-fluid">
+    <div class="container-fluid wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
         <div class="row">
-            <div class="col">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
                 <a name="contactme">
-                    <h1 class="general-h">Get in Touch</h1><hr class="contact-rule" />
+                    <h1 class="general-h">Get in Touch</h1>
+                    <hr class="contact-rule" />
                 </a>
             </div>
-            <div class="col">
-    
+
+            <div class="col-md-2">
+                
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
-                <p class="body-class">Like what you've seen? Let me join your awesome team</p>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <p class="body-class">Like what you've seen?</p>
                 <p class="body-class">Just shoot me a quick email. We can start off from there.</p>
             </div>
-            <div class="col">
-                <form>
-                    <input type="text" placeholder="Your First Name" style="color: #000"> <br />
-                    <input type="text" placeholder="Your Last Name" style="color: #000"> <br />
-                    <input type="text" placeholder="Enter Your Subject" style="color: #000"> <br />
-                    <textarea placeholder="Enter your message..." style="color: #000"></textarea> <br />
-                    <button style="color: #000">Send</button>
-                </form>    
+
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+                <form id="contact-form" method="POST" action="contact.php" role="form">
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="name" style="color:#000; font-family:'Monda', sans-serif">Name *</label>
+                            <input type="text" class="form-control form-contol-sm" name="name" id="name" placeholder="Name">
+                        </div>
+                    </div> <br />
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="email" style="color:#000; font-family:'Monda', sans-serif">Email *</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                    </div> <br />
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="message" style="color:#000; font-family:'Monda', sans-serif">Message *</label>
+                            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Enter message"></textarea>
+                        </div>
+                    </div><br />
+                    <div class="form-row">
+                        <div class="col">
+                            <button type="submit" name="submit" class="btn mb-2 btn-color" style="text-transform:uppercase; font-family:'Ubuntu', san-serif;">Send Message</button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <p style="color:#000; font-family:'Monda', sans-serif">*All fields are required.</p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-md-2">
+
             </div>
         </div>
     </div>
@@ -258,7 +313,7 @@
                 <a href="http://www.linkedin.com/in/mcdanielsokoro" class="fa fa-linkedin" target="_blank"></a>
                 <a href="http://www.github.com/jukels" class="fa fa-github" title="Follow me on github"></a><br /><br />
 
-                <p class="copyright">Copyright &copy; 2013 - 2018. All rights reserved. </p>
+                <p class="copyright footer-paragraph">Copyright &copy; 2018. All rights reserved. </p>
             </center>
         </div>
     </div>
