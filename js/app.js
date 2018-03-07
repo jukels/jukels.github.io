@@ -74,7 +74,7 @@ var TxtType = function(el, toRotate, period) {
     }, false);
 })();
 
-
+/*
 // Contact form validator
 $(function () {
 
@@ -120,3 +120,11 @@ $(function () {
         }
     })
 });
+
+// Change text inside send button on submit
+var send = document.getElementById('contact-submit');
+if(send) {
+        send.onclick = function () {
+                this.innerHTML = '...Sending';
+        }
+}*/
