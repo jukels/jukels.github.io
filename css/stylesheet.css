@@ -700,9 +700,42 @@ body {
 
 .btn-color {
     background: #ff2222a2;
+    width: 100%;
 }
 
 .btn-color:hover {
     background: #ff2222e8;
     transition: all 0.5s ease-in-out;
+}
+
+input {
+    font-family: 'Monda', sans-serif;
+}
+
+.profile-rule {
+    width: 25%;
+    border-bottom: 8px solid #ff2222;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.facts-rule {
+    width: 25%;
+    border-bottom: 8px solid #ff2222;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.portfolio-rule {
+    width: 10%;
+    border-bottom: 8px solid #ff2222;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.contact-rule {
+    width: 15%;
+    border-bottom: 8px solid #ff2222;
+    border-radius: 50%;
+    margin-top: 0px;
 }
